@@ -2,15 +2,16 @@
 using namespace std;
 
 int main() {
-    int a,b,c;
+   long int inputNumber, sum = 0;
 
-    cin>> a >> b >> c;
+   cin>> inputNumber;
 
-    if((a*a + b*b == c*c) || (a*a + c*c ==b*b) || (b*b + c*c == a*a)) {
-        cout << "True";
-    } else {
-        cout<< "False";
-    }
+   while (inputNumber != 0) {
+       sum += inputNumber;
+       cin>> inputNumber;
+   }
+
+   cout<< sum;
 
     return 0;
 }
