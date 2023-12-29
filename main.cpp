@@ -2,20 +2,15 @@
 using namespace std;
 
 int main() {
-    int x;
-    int y;
+    int a,b,c;
 
-    int towerLength;
+    cin>> a >> b >> c;
 
-    cout << "Enter your length : \n";
-    cin >> towerLength;
-
-    for(x = 0;x <towerLength; x++) {
-     for(y = 0; y <= x; y++) {
-         cout << "*";
-     }
-     cout << "\n";
-
+    if((a*a + b*b == c*c) || (a*a + c*c ==b*b) || (b*b + c*c == a*a)) {
+        cout << "True";
+    } else {
+        cout<< "False";
     }
 
+    return 0;
 }
